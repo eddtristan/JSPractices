@@ -9,7 +9,55 @@
     <title>Promedio</title>
 </head>
 <body>
-    
+    <div class="container mt-3">
+        <header>
+            <h1>Promedio Final</h1>
+        </header>
+        <div class="row">
+            <div class="col-3 mt-3">
+                <div class="form-group">
+                  <label for="calificacionUno">Ingresa la calificación 1:</label>
+                  <input type="text" id="calificacionUno" class="form-control" placeholder="Ingresa la calificación 1" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="form-group">
+                  <label for="calificacionDos">Ingresa la calificación 2:</label>
+                  <input type="text" id="calificacionDos" class="form-control" placeholder="Ingresa la calificación 2" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="form-group">
+                  <label for="calificacionTres">Ingresa la calificación 3:</label>
+                  <input type="text" id="calificacionTres" class="form-control" placeholder="Ingresa la calificación 3" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="form-group">
+                  <label for="calificacionCuatro">Ingresa la calificación 4:</label>
+                  <input type="text" id="calificacionCuatro" class="form-control" placeholder="Ingresa la calificación 4" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-3 mt-3">
+                <div class="form-group">
+                  <label for="calificacionCinco">Ingresa la calificación 5:</label>
+                  <input type="text" id="calificacionCinco" class="form-control" placeholder="Ingresa la calificación 5" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <button type="button" id="btnPromedio" class="btn btn-outline-primary btn-lg btn-block">Calcular Promedio</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="alert alert-info" role="alert">
+                        <span id="resultado"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
