@@ -9,7 +9,37 @@
     <title>Distancia Recorrida</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Distancia recorrida</h1>
+        </header>
+        <div class="row">
+            <div class="col-6 mt-3">
+                <div class="form-group">
+                  <label for="velocidad">Ingrese la velocidad del vehiculo en m/s:</label>
+                  <input type="text" id="velocidad" class="form-control" placeholder="Ingrese la velocidad del vehiculo en m/s" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-6 mt-3">
+                <div class="form-group">
+                  <label for="tiempo">Ingrese el tiempo transcurrido en segundos:</label>
+                  <input type="text" id="tiempo" class="form-control" placeholder="Ingrese el tiempo transcurrido en segundos" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mt-3">
+                    <button type="button" id="btnDistancia" class="btn btn-outline-primary btn-lg btn-block">Calcular Distancia</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="alert alert-info" role="alert">
+                        <span id="resultado"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
