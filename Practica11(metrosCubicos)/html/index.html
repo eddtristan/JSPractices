@@ -9,7 +9,37 @@
     <title>Metros cúbicos</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="mt-3">
+            <h1>Metros Cúbicos</h1>
+        </header>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                  <label for="metros">Ingresar la longitud de los lados de la alberca a cotizar:</label>
+                  <input type="text" id="metros" class="form-control" placeholder="Ingresar el número de metros cúbicos a cotizar" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                  <label for="precio">Ingresar el precio del metro cúbico:</label>
+                  <input type="text" id="precio" class="form-control" placeholder="Ingresar el precio del metro cúbico" aria-describedby="helpId">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <button type="button" id="btnCosto" class="btn btn-outline-primary btn-lg btn-block">Calcular Costo</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="alert alert-info" role="alert">
+                    <span id="resultado"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
