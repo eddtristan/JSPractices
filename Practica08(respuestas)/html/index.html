@@ -9,7 +9,43 @@
     <title>Revisión de respuestas</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="mt-3">
+            <h1>Revisión de respuestas</h1>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="correctas">Ingrese el número de respuestas correctas:</label>
+                    <input type="text" id="correctas" class="form-control" placeholder="Ingrese el número de respuestas correctas" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="incorrectas">Ingrese el número de respuestas incorrectas:</label>
+                    <input type="text" id="incorrectas" class="form-control" placeholder="Ingrese el número de respuestas incorrectas" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="enBlanco">Ingrese el número de respuestas en blanco:</label>
+                    <input type="text" id="enBlanco" class="form-control" placeholder="Ingrese el número de respuestas en blanco" aria-describedby="helpId">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <button type="button" id="btnPuntaje" class="btn btn-outline-primary btn-lg btn-block">Calcular Puntaje</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="alert alert-info" role="alert">
+                    <span id="resultado"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
