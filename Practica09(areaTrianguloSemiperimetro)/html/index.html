@@ -9,7 +9,43 @@
     <title>Triángulo con Semiperimetro</title>
 </head>
 <body>
-    
-    <script src="./../js/index.css"></script>
+    <div class="container">
+        <header class="mt-3">
+            <h1>Calcular área de triángulo con semiperimetro</h1>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <div class="form-group">
+                  <label for="ladoA">Ingresa el lado A del triángulo:</label>
+                  <input type="text" id="ladoA" class="form-control" placeholder="Ingresa el lado A del triángulo" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                  <label for="ladoB">Ingresa el lado B del triángulo:</label>
+                  <input type="text" id="ladoB" class="form-control" placeholder="Ingresa el lado B del triángulo" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                  <label for="ladoC">Ingresa el lado C del triángulo:</label>
+                  <input type="text" id="ladoC" class="form-control" placeholder="Ingresa el lado C del triángulo" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <button type="button" id="btnArea" class="btn btn-outline-primary btn-lg btn-block">Calcular Área</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="alert alert-info" role="alert">
+                        <span id="resultado"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/index.js"></script>
 </body>
 </html>
