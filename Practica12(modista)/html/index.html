@@ -9,7 +9,31 @@
     <title>Modista</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="mt-3">
+            <h1>Convertir metros a pulgadas</h1>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <div class="form-group">
+                  <label for="metros">Ingresa los metros a convertir:</label>
+                  <input type="text" id="metros" class="form-control" placeholder="Ingresa los metros a convertir" aria-describedby="helpId">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <button type="button" id="btnConvertir" class="btn btn-outline-primary btn-lg btn-block">Convertir Metros</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="alert alert-info" role="alert">
+                    <span id="resultado"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
