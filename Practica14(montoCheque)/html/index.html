@@ -9,7 +9,43 @@
     <title>Monto Cheque</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="mt-3">
+            <h1>Cálculo de Viáticos</h1>
+        </header>
+        <div class="row">
+            <div class="col-4 mt-3">
+                <div class="form-group">
+                  <label for="dias">Ingrese el número de días de la estancia:</label>
+                  <input type="text" id="dias" class="form-control" placeholder="Ingrese el número de días de la estancia" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-4 mt-3">
+                <div class="form-group">
+                  <label for="alojamiento">Ingrese el costo del alojamiento por día:</label>
+                  <input type="text" id="alojamiento" class="form-control" placeholder="Ingrese el costo del alojamiento por día" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-4 mt-3">
+                <div class="form-group">
+                  <label for="comida">Ingrese el costo de la comida por día:</label>
+                  <input type="text" id="comida" class="form-control" placeholder="Ingrese el costo de la comida por día" aria-describedby="helpId">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <button type="button" id="btnCheque" class="btn btn-outline-primary btn-lg btn-block">Generar Cheque</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="alert alert-info" role="alert">
+                    <span id="resultado"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
