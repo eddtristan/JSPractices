@@ -9,7 +9,37 @@
     <title>Calcular Hipotenusa</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="mt-3">
+            <h1>Calcular la hipotenusa de un triángulo rectángulo</h1>
+        </header>
+        <div class="row">
+            <div class="col-6 mt-3">
+                <div class="form-group">
+                  <label for="catetoA">Ingresa el valor del cateto A:</label>
+                  <input type="text" id="catetoA" class="form-control" placeholder="Ingresa el valor del cateto A" aria-describedby="helpId">
+                </div>
+            </div>
+            <div class="col-6 mt-3">
+                <div class="form-group">
+                  <label for="catetoB">Ingresa el valor del cateto B:</label>
+                  <input type="text" id="catetoB" class="form-control" placeholder="Ingresa el valor del cateto B" aria-describedby="helpId">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <button type="button" id="btnHipotenusa" class="btn btn-outline-primary btn-lg btn-block">Calcular Hipotenusa</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="alert alert-info" role="alert">
+                    <span id="resultado"></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./../js/index.js"></script>
 </body>
 </html>
