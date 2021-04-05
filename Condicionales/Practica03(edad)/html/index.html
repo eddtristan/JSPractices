@@ -11,7 +11,34 @@
     <link rel="stylesheet" href="./../css/index.css">
   </head>
   <body>
-      
+        <div class="container">
+            <h1>Edades</h1>
+
+            <div class="form-group">
+                <label for="inpNombre1">Ingresa el nombre usuario 1:</label>
+                <input type="text" id="inpNombre1" class="form-control" placeholder="Ingresa el nombre usuario 1" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="inpEdad1">Ingresa la edad usuario 1:</label>
+                <input type="number" id="inpEdad1" class="form-control" placeholder="Ingresa la edad usuario 1" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="inpNombre2">Ingresa el nombre usuario 2:</label>
+                <input type="text" id="inpNombre2" class="form-control" placeholder="Ingresa el nombre usuario 2" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="inpEdad2">Ingresa la edad usuario 2:</label>
+                <input type="number" id="inpEdad2" class="form-control" placeholder="Ingresa la edad usuario 2" aria-describedby="helpId">
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="btnCalcular" class="btn btn-primary btn-lg btn-block">Revisar Edades</button>
+            </div>
+            
+            <div class="alert alert-info" role="alert">
+                <span id="resultado"></span>
+            </div>
+        </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./../js/index.js"></script>
