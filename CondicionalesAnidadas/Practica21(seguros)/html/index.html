@@ -1,22 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Pólizas</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./../css/index.css">
-  </head>
-  <body>
-      
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Pólizas de seguro</h1>
+        </header>
+        <div class="form-group">
+            <label for="sltTipo">Que póliza de seguros le interesa contratar?</label>
+            <select class="form-control" name="" id="sltTipo">
+                <option value="tipoA">Cobertura amplia (A)</option>
+                <option value="tipoB">Daños a terceros (B)</option>
+            </select>
+        </div>
+        <h3>Seleccione las opciones que correspondan a su realidad:</h3>
+        <div class="form-group">
+            <label for="sltAlcohol">Usted tiene el habito de beber alcohol</label>
+            <select class="form-control" name="" id="sltAlcohol">
+                <option value="alcohol">SI</option>
+                <option>NO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sltLentes">Usted utiliza lentes</label>
+            <select class="form-control" name="" id="sltLentes">
+                <option value="lentes">SI</option>
+                <option>NO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sltEnfermedad">Usted padece alguna enfermedad(deficiencia cardiaca o diabetes)</label>
+            <select class="form-control" name="" id="sltEnfermedad">
+                <option value="enfermedad">SI</option>
+                <option>NO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sltMayor">Usted es mayor a 40 años</label>
+            <select class="form-control" name="" id="sltMayor">
+                <option value="mayor">SI</option>
+                <option>NO</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="button" id="btnCotizar" class="btn btn-primary btn-lg btn-block">Cotizar Póliza</button>
+        </div>
+        <div class="alert alert-info" role="alert">
+            <span id="resultado"></span>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./../js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
