@@ -7,9 +7,9 @@ function calcularAhorro() {
     let resultadoAcumuladorMensajes = "";
 
     for (let i=0; i<12; i++) {
-        let ahorroMensual = Number(prompt(`Ingrese el ahorro del mes ${i}`));
+        let ahorroMensual = Number(prompt(`Ingrese el ahorro del mes ${i+1}`));
         ahorroAcumulado = ahorroAcumulado + ahorroMensual;
-        resultadoAcumuladorMensajes += `<li class="list-group-item">El ahorro acumulado en el mes ${i} es: ${ahorroAcumulado}</li>`;
+        resultadoAcumuladorMensajes += `<li class="list-group-item">El ahorro acumulado en el mes ${i+1} es: ${ahorroAcumulado}</li>`;
     }
 
     const listaAcumulacionMensual = document.getElementById("acumulacionMensual");
