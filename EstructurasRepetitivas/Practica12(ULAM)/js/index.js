@@ -10,18 +10,15 @@ function conjeturaULAM() {
         alert("Debes ingresar un número mayor que 0");
     }
 
-    console.log(numero);
     conjetura += `<li class="list-group-item">${numero} </li>`;
 
     while (numero != 1) {
         if ((numero % 2) == 0) {
             numero = numero / 2;
             conjetura += `<li class="list-group-item">${numero} </li>`;
-            console.log(numero);
         } else {
             numero = numero * 3 + 1;
             conjetura += `<li class="list-group-item">${numero} </li>`;
-            console.log(numero);
         }
     }
 
