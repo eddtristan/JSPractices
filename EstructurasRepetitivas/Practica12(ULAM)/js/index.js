@@ -1,3 +1,32 @@
 const btnInitApp = document.getElementById("btnInitApp");
 
-btnInitApp.addEventListener("click", );
+btnInitApp.addEventListener("click", conjeturaULAM);
+
+function conjeturaULAM() {
+    let numero = Number(prompt("Ingresa un número para iniciar la conjetura ULAM"));
+    let conjetura = "";
+
+    if (numero <= 0) {
+        alert("Debes ingresar un número mayor que 0");
+    }
+
+    console.log(numero);
+    conjetura += `<li class="list-group-item">${numero} </li>`;
+
+    while (numero != 1) {
+        if ((numero % 2) == 0) {
+            numero = numero / 2;
+            conjetura += `<li class="list-group-item">${numero} </li>`;
+            console.log(numero);
+        } else {
+            numero = numero * 3 + 1;
+            conjetura += `<li class="list-group-item">${numero} </li>`;
+            console.log(numero);
+        }
+    }
+
+    let resultContainer = document.getElementById("resultContainer");
+
+    resultContainer.innerHTML = `${conjetura}`;
+
+}
