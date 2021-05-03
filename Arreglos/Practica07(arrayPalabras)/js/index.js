@@ -19,21 +19,15 @@ function agregarPalabra() {
         } else {
             array[indice] = palabra;
             indice++;
-            if (palabra.charAt(0) == "A" || palabra.charAt(0) == "a" || palabra.charAt(0) == "E" || palabra.charAt(0) == "e" 
-                || palabra.charAt(0) == "I" || palabra.charAt(0) == "i" || palabra.charAt(0) == "O" || palabra.charAt(0) == "o" 
-                || palabra.charAt(0) == "U" || palabra.charAt(0) == "u") {
-                    arrayVocales.push(palabra);
-                }
         }
     }
+    console.log(arrayVocales);
     arrayFiltrado(array);
 }
 
 function arrayFiltrado(arreglo) {
-    arrayVocales = arreglo.filter((e) =>
-        e[0] == "A" || e[0] == "a" || e[0] == "E" || e[0] == "e" 
-        || e[0] == "I" || e[0] == "i" || e[0] == "O" || e[0] == "o" 
-        || e[0] == "U" || e[0] == "u");
+    arrayVocales = arreglo.filter((e) => e[0] == "A" || e[0] == "a" || e[0] == "E" || e[0] == "e" 
+        || e[0] == "I" || e[0] == "i" || e[0] == "O" || e[0] == "o" || e[0] == "U" || e[0] == "u");
 
     for (let i = 0; i < array.length; i++) {
         arrayPantalla +=  `["${arreglo[i]}"] `;
